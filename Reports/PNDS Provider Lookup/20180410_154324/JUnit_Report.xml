@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PNDS Provider Lookup" time="14" tests="1" failures="0" errors="0">
+   <testsuite name="PNDS Provider Lookup" tests="1" failures="0" errors="0" time="14" timestamp="2018-04-10 15:43:27" hostname="stevengilliard - 192.168.0.182" id="Test Suites/PNDS Provider Lookup">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/stevengilliard/Katalon Studio/Provider Lookup/Reports/PNDS Provider Lookup/20180410_154324"/>
+         <property name="logFiles" value="/Users/stevengilliard/Katalon Studio/Provider Lookup/Reports/PNDS Provider Lookup/20180410_154324/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="stevengilliard - 192.168.0.182"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="5.3.1.1"/>
+         <property name="browser" value="Chrome 65.0.3325.181"/>
+         <property name="hostAddress" value="192.168.0.182"/>
+         <property name="sessionId" value="d36d19993d7561f037623f8b778fd8fc"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Zipcode test" classname="Test Cases/Zipcode test" status="PASSED">
+         <system-out><![CDATA[2018-04-10 15:43:28 - [TEST_CASE][PASSED] - Test Cases/Zipcode test: Test Cases/Zipcode test
+
+2018-04-10 15:43:29 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-04-10 15:43:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-04-10 15:43:33 - [TEST_STEP][PASSED] - Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(Zipcodes): Test data is internal data, reading internal data
+
+2018-04-10 15:43:33 - [TEST_STEP][PASSED] - Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(): null
+
+2018-04-10 15:43:33 - [TEST_STEP][PASSED] - Statement - baseUrl = "https://pndslookup.health.ny.gov": null
+
+2018-04-10 15:43:33 - [TEST_STEP][PASSED] - Statement - selenium = new com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium(driver, baseUrl): null
+
+2018-04-10 15:43:33 - [TEST_STEP][PASSED] - Statement - For (def index : (0..(data.getRowNumbers() - 1))): Text '9582' is present on page 
+
+2018-04-10 15:43:33 - [TEST_STEP][PASSED] - Statement - selenium.open("https://pndslookup.health.ny.gov/providers/search"): null
+
+2018-04-10 15:43:35 - [TEST_STEP][PASSED] - Statement - selenium.type("name=data[0][Practice][zip_code]", data.internallyGetValue("Zipcode", index)): null
+
+2018-04-10 15:43:35 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-10 15:43:35 - [TEST_STEP][PASSED] - verifyTextPresent: Text '5156' is present on page 
+
+2018-04-10 15:43:36 - [MESSAGE][PASSED] - Text '5156' is present on page 
+
+2018-04-10 15:43:36 - [TEST_STEP][PASSED] - Statement - selenium.open("https://pndslookup.health.ny.gov/providers/search"): null
+
+2018-04-10 15:43:37 - [TEST_STEP][PASSED] - Statement - selenium.type("name=data[0][Practice][zip_code]", data.internallyGetValue("Zipcode", index)): null
+
+2018-04-10 15:43:37 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-10 15:43:38 - [TEST_STEP][PASSED] - verifyTextPresent: Text '15244' is present on page 
+
+2018-04-10 15:43:39 - [MESSAGE][PASSED] - Text '15244' is present on page 
+
+2018-04-10 15:43:39 - [TEST_STEP][PASSED] - Statement - selenium.open("https://pndslookup.health.ny.gov/providers/search"): null
+
+2018-04-10 15:43:40 - [TEST_STEP][PASSED] - Statement - selenium.type("name=data[0][Practice][zip_code]", data.internallyGetValue("Zipcode", index)): null
+
+2018-04-10 15:43:40 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-10 15:43:41 - [TEST_STEP][PASSED] - verifyTextPresent: Text '9582' is present on page 
+
+2018-04-10 15:43:42 - [MESSAGE][PASSED] - Text '9582' is present on page 
+
+2018-04-10 15:43:42 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-04-10 15:43:42 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-04-10 15:43:27 - [TEST_SUITE][PASSED] - PNDS Provider Lookup: Test Cases/Zipcode test]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

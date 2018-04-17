@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PNDS Provider Lookup" time="40" tests="1" failures="0" errors="0">
+   <testsuite name="PNDS Provider Lookup" tests="1" failures="0" errors="0" time="40" timestamp="2018-04-12 14:55:33" hostname="stevengilliard - 192.168.0.244" id="Test Suites/PNDS Provider Lookup">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/stevengilliard/Katalon Studio/Provider Lookup/Reports/PNDS Provider Lookup/20180412_145515"/>
+         <property name="logFiles" value="/Users/stevengilliard/Katalon Studio/Provider Lookup/Reports/PNDS Provider Lookup/20180412_145515/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="stevengilliard - 192.168.0.244"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="5.3.1.1"/>
+         <property name="browser" value="Chrome 65.0.3325.181"/>
+         <property name="hostAddress" value="192.168.0.244"/>
+         <property name="sessionId" value="0ed3d0016badc0eb4da61af2ccb575ce"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Zipcode test" classname="Test Cases/Zipcode test" status="PASSED">
+         <system-out><![CDATA[2018-04-12 14:55:34 - [TEST_CASE][PASSED] - Test Cases/Zipcode test: Test Cases/Zipcode test
+
+2018-04-12 14:55:35 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-04-12 14:55:39 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-04-12 14:55:39 - [TEST_STEP][PASSED] - Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(Zipcodes): Test data is internal data, reading internal data
+
+2018-04-12 14:55:39 - [TEST_STEP][PASSED] - Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(): null
+
+2018-04-12 14:55:39 - [TEST_STEP][PASSED] - Statement - baseUrl = "http://dev.providerlookup.ipro.org": null
+
+2018-04-12 14:55:39 - [TEST_STEP][PASSED] - Statement - selenium = new com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium(driver, baseUrl): null
+
+2018-04-12 14:55:39 - [TEST_STEP][PASSED] - Statement - For (def index : (0..(data.getRowNumbers() - 1))): Results: 11554,9582
+
+2018-04-12 14:55:39 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-12 14:55:41 - [TEST_STEP][PASSED] - Statement - selenium.type("name=data[0][Practice][zip_code]", data.internallyGetValue("Zipcode", index)): null
+
+2018-04-12 14:55:42 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-12 14:55:44 - [TEST_STEP][PASSED] - verifyTextPresent: Text '5156' is present on page 
+
+2018-04-12 14:55:46 - [MESSAGE][PASSED] - Text '5156' is present on page 
+
+2018-04-12 14:55:46 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '5156'
+
+2018-04-12 14:55:46 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '5156'
+
+2018-04-12 14:55:46 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-12 14:55:46 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("Zipcode", index) + "," + result): Results: 11754,5156
+
+2018-04-12 14:55:46 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-12 14:55:48 - [TEST_STEP][PASSED] - Statement - selenium.type("name=data[0][Practice][zip_code]", data.internallyGetValue("Zipcode", index)): null
+
+2018-04-12 14:55:48 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-12 14:55:52 - [TEST_STEP][PASSED] - verifyTextPresent: Text '15244' is present on page 
+
+2018-04-12 14:55:59 - [MESSAGE][PASSED] - Text '15244' is present on page 
+
+2018-04-12 14:55:59 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '15244'
+
+2018-04-12 14:55:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '15244'
+
+2018-04-12 14:55:59 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-12 14:55:59 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("Zipcode", index) + "," + result): Results: 11030,15244
+
+2018-04-12 14:55:59 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-12 14:56:01 - [TEST_STEP][PASSED] - Statement - selenium.type("name=data[0][Practice][zip_code]", data.internallyGetValue("Zipcode", index)): null
+
+2018-04-12 14:56:01 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-12 14:56:05 - [TEST_STEP][PASSED] - verifyTextPresent: Text '9582' is present on page 
+
+2018-04-12 14:56:13 - [MESSAGE][PASSED] - Text '9582' is present on page 
+
+2018-04-12 14:56:13 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '9582'
+
+2018-04-12 14:56:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '9582'
+
+2018-04-12 14:56:13 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-12 14:56:13 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("Zipcode", index) + "," + result): Results: 11554,9582
+
+2018-04-12 14:56:13 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-04-12 14:56:13 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-04-12 14:55:33 - [TEST_SUITE][PASSED] - PNDS Provider Lookup: Test Cases/Zipcode test]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

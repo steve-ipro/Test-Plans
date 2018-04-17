@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description></description>
+   <name>Provider Lookup</name>
+   <tag></tag>
+   <UUID>61f8738e-06bd-4f48-a93d-0cf28f524b5f</UUID>
+   <pageLoadTimeout>0</pageLoadTimeout>
+   <recentExpandedTreeEntityIds>Test Cases</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Test Suites</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Data Files</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Reports</recentExpandedTreeEntityIds>
+   <recentExpandedTreeEntityIds>Reports/PNDS Provider Lookup</recentExpandedTreeEntityIds>
+   <recentOpenedTreeEntityIds>Test Cases/PL Get Plan Counts</recentOpenedTreeEntityIds>
+   <recentOpenedTreeEntityIds>Data Files/Plans</recentOpenedTreeEntityIds>
+   <recentOpenedTreeEntityIds>Test Suites/PNDS Provider Lookup</recentOpenedTreeEntityIds>
+   <recentOpenedTreeEntityIds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+</Project>

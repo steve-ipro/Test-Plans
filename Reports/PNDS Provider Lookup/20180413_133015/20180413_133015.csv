@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+PNDS Provider Lookup,Chrome 65.0.3325.181,,2018-04-13 13:31:15,2018-04-13 13:37:46,6m - 30.837s,PASSED
+,,,,,,
+Test Cases/PL Get Plan Counts,Chrome 65.0.3325.181,,2018-04-13 13:31:19,2018-04-13 13:37:46,6m - 27.226s,PASSED
+openBrowser,Chrome 65.0.3325.181,,2018-04-13 13:31:22,2018-04-13 13:31:51,29.473s,PASSED
+Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(Plans),Chrome 65.0.3325.181,,2018-04-13 13:31:51,2018-04-13 13:31:52,0.425s,PASSED
+Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(),Chrome 65.0.3325.181,,2018-04-13 13:31:52,2018-04-13 13:31:52,0.260s,PASSED
+"Statement - baseUrl = ""http://dev.providerlookup.ipro.org""",Chrome 65.0.3325.181,,2018-04-13 13:31:52,2018-04-13 13:31:52,0.002s,PASSED
+"Statement - selenium = new com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium(driver, baseUrl)",Chrome 65.0.3325.181,,2018-04-13 13:31:52,2018-04-13 13:31:54,1.805s,PASSED
+Statement - For (def index : (0..(data.getRowNumbers() - 1))),Chrome 65.0.3325.181,,2018-04-13 13:31:54,2018-04-13 13:37:44,5m - 50.568s,PASSED
+closeBrowser,Chrome 65.0.3325.181,,2018-04-13 13:37:44,2018-04-13 13:37:46,1.134s,PASSED

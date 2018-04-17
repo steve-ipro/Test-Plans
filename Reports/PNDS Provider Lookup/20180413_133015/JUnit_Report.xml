@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PNDS Provider Lookup" time="390" tests="1" failures="0" errors="0">
+   <testsuite name="PNDS Provider Lookup" tests="1" failures="0" errors="0" time="390" timestamp="2018-04-13 13:31:15" hostname="stevengilliard - 192.168.0.244" id="Test Suites/PNDS Provider Lookup">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/stevengilliard/Katalon Studio/Provider Lookup/Reports/PNDS Provider Lookup/20180413_133015"/>
+         <property name="logFiles" value="/Users/stevengilliard/Katalon Studio/Provider Lookup/Reports/PNDS Provider Lookup/20180413_133015/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="stevengilliard - 192.168.0.244"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="5.3.1.1"/>
+         <property name="browser" value="Chrome 65.0.3325.181"/>
+         <property name="hostAddress" value="192.168.0.244"/>
+         <property name="sessionId" value="40610bf6e935749d9aeee381ba49f637"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/PL Get Plan Counts" classname="Test Cases/PL Get Plan Counts" status="PASSED">
+         <system-out><![CDATA[2018-04-13 13:31:19 - [TEST_CASE][PASSED] - Test Cases/PL Get Plan Counts: Test Cases/PL Get Plan Counts
+
+2018-04-13 13:31:22 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-04-13 13:31:51 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-04-13 13:31:51 - [TEST_STEP][PASSED] - Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(Plans): Reading CSV file with source file 'comma', separator 'containing header' and '{2}'
+
+2018-04-13 13:31:52 - [TEST_STEP][PASSED] - Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(): null
+
+2018-04-13 13:31:52 - [TEST_STEP][PASSED] - Statement - baseUrl = "http://dev.providerlookup.ipro.org": null
+
+2018-04-13 13:31:52 - [TEST_STEP][PASSED] - Statement - selenium = new com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium(driver, baseUrl): null
+
+2018-04-13 13:31:54 - [TEST_STEP][PASSED] - Statement - For (def index : (0..(data.getRowNumbers() - 1))): Results: YourCare Health Plan Inc.,9688
+
+2018-04-13 13:31:54 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:13 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:15 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:15 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:32:18 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '90212'
+
+2018-04-13 13:32:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '90212'
+
+2018-04-13 13:32:19 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:32:19 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Aetna,90212
+
+2018-04-13 13:32:19 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:20 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:21 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:21 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:32:23 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '46388'
+
+2018-04-13 13:32:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '46388'
+
+2018-04-13 13:32:23 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:32:23 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Affinity,46388
+
+2018-04-13 13:32:24 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:25 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:25 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:26 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:32:28 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '3362'
+
+2018-04-13 13:32:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '3362'
+
+2018-04-13 13:32:28 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:32:28 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: AgeWell New York LLC,3362
+
+2018-04-13 13:32:28 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:30 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:30 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:31 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:32:33 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '419'
+
+2018-04-13 13:32:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '419'
+
+2018-04-13 13:32:33 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:32:33 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: AlphaCare of New York Inc.,419
+
+2018-04-13 13:32:33 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:34 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:34 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:35 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:32:36 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '10022'
+
+2018-04-13 13:32:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '10022'
+
+2018-04-13 13:32:36 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:32:36 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Ameritas Life Insurance Corp. of New York,10022
+
+2018-04-13 13:32:36 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:38 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:38 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:38 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:32:40 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '19811'
+
+2018-04-13 13:32:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '19811'
+
+2018-04-13 13:32:40 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:32:40 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Amida Care Inc. (HIV/SNP),19811
+
+2018-04-13 13:32:40 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:41 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:42 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:42 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:32:43 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '4585'
+
+2018-04-13 13:32:44 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '4585'
+
+2018-04-13 13:32:44 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:32:44 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: ArchCare,4585
+
+2018-04-13 13:32:44 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:45 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:45 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:46 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:32:48 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '7382'
+
+2018-04-13 13:32:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '7382'
+
+2018-04-13 13:32:49 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:32:49 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: AXA Equitable Life Insurance Company,7382
+
+2018-04-13 13:32:49 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:50 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:50 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:51 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:32:54 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '21145'
+
+2018-04-13 13:32:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '21145'
+
+2018-04-13 13:32:55 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:32:55 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: BlueCross BlueShield of Western NY / BlueShield of Northeastern NY,21145
+
+2018-04-13 13:32:55 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:32:57 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:32:57 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:32:58 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:02 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '19336'
+
+2018-04-13 13:33:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '19336'
+
+2018-04-13 13:33:02 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:02 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Capital District Physicians Health Plan (CDPHP),19336
+
+2018-04-13 13:33:02 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:04 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:04 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:06 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:07 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '416'
+
+2018-04-13 13:33:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '416'
+
+2018-04-13 13:33:07 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:07 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Catholic Health - LIFE,416
+
+2018-04-13 13:33:07 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:09 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:09 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:10 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:11 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '20604'
+
+2018-04-13 13:33:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '20604'
+
+2018-04-13 13:33:11 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:11 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Centerlight Healthcare,20604
+
+2018-04-13 13:33:11 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:12 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:12 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:13 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:14 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '19574'
+
+2018-04-13 13:33:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '19574'
+
+2018-04-13 13:33:15 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:15 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Centers Plan for Healthy Living LLC,19574
+
+2018-04-13 13:33:15 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:16 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:16 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:17 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:19 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '19397'
+
+2018-04-13 13:33:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '19397'
+
+2018-04-13 13:33:19 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:19 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Cigna Health and Life Insurance Company, Inc.,19397
+
+2018-04-13 13:33:19 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:21 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:21 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:21 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:24 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '76928'
+
+2018-04-13 13:33:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '76928'
+
+2018-04-13 13:33:24 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:24 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Commercial Travelers Mutual Insurance Company,76928
+
+2018-04-13 13:33:24 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:26 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:26 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:26 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:28 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '326'
+
+2018-04-13 13:33:29 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '326'
+
+2018-04-13 13:33:29 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:29 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Complete Senior Care,326
+
+2018-04-13 13:33:29 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:31 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:32 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:32 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:35 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '75540'
+
+2018-04-13 13:33:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '75540'
+
+2018-04-13 13:33:36 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:36 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Consolidated Health Plans,75540
+
+2018-04-13 13:33:36 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:37 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:37 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:38 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:39 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '11280'
+
+2018-04-13 13:33:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '11280'
+
+2018-04-13 13:33:40 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:40 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Crystal Run Health Plan LLC,11280
+
+2018-04-13 13:33:40 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:41 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:41 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:42 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:44 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '92391'
+
+2018-04-13 13:33:44 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '92391'
+
+2018-04-13 13:33:44 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:44 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Delaware American Life Insurance Company,92391
+
+2018-04-13 13:33:44 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:45 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:46 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:46 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:48 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '6177'
+
+2018-04-13 13:33:48 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '6177'
+
+2018-04-13 13:33:48 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:48 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Delta Dental of New York, Inc.,6177
+
+2018-04-13 13:33:48 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:49 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:49 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:50 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:51 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '4168'
+
+2018-04-13 13:33:52 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '4168'
+
+2018-04-13 13:33:52 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:52 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Dental Health Alliance, LLC,4168
+
+2018-04-13 13:33:52 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:53 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:53 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:54 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:55 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '2659'
+
+2018-04-13 13:33:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '2659'
+
+2018-04-13 13:33:55 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:55 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Dentcare,2659
+
+2018-04-13 13:33:55 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:33:56 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:33:57 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:33:57 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:33:58 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '1365'
+
+2018-04-13 13:33:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '1365'
+
+2018-04-13 13:33:59 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:33:59 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Dentegra Insurance Company of New England,1365
+
+2018-04-13 13:33:59 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:00 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:00 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:00 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:02 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '1529'
+
+2018-04-13 13:34:02 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '1529'
+
+2018-04-13 13:34:02 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:02 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Eastern Vision Service Plan, Inc.,1529
+
+2018-04-13 13:34:02 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:03 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:03 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:03 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:05 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '152'
+
+2018-04-13 13:34:05 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '152'
+
+2018-04-13 13:34:05 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:05 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Eddy Senior Care,152
+
+2018-04-13 13:34:05 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:06 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:07 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:07 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:09 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '42'
+
+2018-04-13 13:34:09 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '42'
+
+2018-04-13 13:34:09 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:09 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Elant Choice,42
+
+2018-04-13 13:34:09 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:10 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:11 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:11 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:13 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '11006'
+
+2018-04-13 13:34:13 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '11006'
+
+2018-04-13 13:34:13 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:13 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Elderplan Inc.,11006
+
+2018-04-13 13:34:13 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:14 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:14 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:15 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:16 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '5773'
+
+2018-04-13 13:34:16 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '5773'
+
+2018-04-13 13:34:16 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:16 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: ElderServe Health Inc.,5773
+
+2018-04-13 13:34:16 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:18 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:18 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:18 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:21 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '66422'
+
+2018-04-13 13:34:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '66422'
+
+2018-04-13 13:34:21 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:21 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: EmblemHealth,66422
+
+2018-04-13 13:34:21 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:22 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:23 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:23 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:25 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '86982'
+
+2018-04-13 13:34:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '86982'
+
+2018-04-13 13:34:26 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:26 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Empire BC/ Empire BCBS/ Empire HealthChoice HMO Inc.,86982
+
+2018-04-13 13:34:26 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:27 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:27 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:28 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:30 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '16688'
+
+2018-04-13 13:34:31 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '16688'
+
+2018-04-13 13:34:31 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:31 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Excellus BlueCross BlueShield/Excellus Health Plan, Inc.,16688
+
+2018-04-13 13:34:31 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:32 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:33 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:33 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:35 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '2908'
+
+2018-04-13 13:34:35 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '2908'
+
+2018-04-13 13:34:35 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:35 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Extended MLTC LLC,2908
+
+2018-04-13 13:34:35 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:36 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:37 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:37 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:39 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '786'
+
+2018-04-13 13:34:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '786'
+
+2018-04-13 13:34:39 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:39 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Fallon Health Weinberg Inc.,786
+
+2018-04-13 13:34:39 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:40 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:41 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:41 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:43 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '76324'
+
+2018-04-13 13:34:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '76324'
+
+2018-04-13 13:34:43 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:43 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Fidelis/New York State Catholic Health Plan Inc.,76324
+
+2018-04-13 13:34:43 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:45 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:45 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:45 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:47 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '2053'
+
+2018-04-13 13:34:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '2053'
+
+2018-04-13 13:34:47 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:47 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Fidelity Security Life Insurance Company of New York,2053
+
+2018-04-13 13:34:47 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:48 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:49 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:49 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:51 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '10017'
+
+2018-04-13 13:34:51 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '10017'
+
+2018-04-13 13:34:51 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:51 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: First Reliance Standard Life Company,10017
+
+2018-04-13 13:34:51 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:52 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:52 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:53 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:55 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '278'
+
+2018-04-13 13:34:55 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '278'
+
+2018-04-13 13:34:55 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:55 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Gerber Life Insurance Company,278
+
+2018-04-13 13:34:55 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:34:56 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:34:56 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:34:57 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:34:59 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '6337'
+
+2018-04-13 13:34:59 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '6337'
+
+2018-04-13 13:34:59 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:34:59 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Guardian Life Insurance Company,6337
+
+2018-04-13 13:34:59 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:00 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:01 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:01 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:03 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '19216'
+
+2018-04-13 13:35:03 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '19216'
+
+2018-04-13 13:35:03 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:03 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Guildnet,19216
+
+2018-04-13 13:35:03 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:04 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:05 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:05 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:07 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '407'
+
+2018-04-13 13:35:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '407'
+
+2018-04-13 13:35:07 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:07 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Hamaspik Choice Inc.,407
+
+2018-04-13 13:35:07 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:08 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:08 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:09 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:10 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '66422'
+
+2018-04-13 13:35:10 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '66422'
+
+2018-04-13 13:35:10 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:10 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: EmblemHealth,66422
+
+2018-04-13 13:35:10 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:12 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:12 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:12 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:14 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '42884'
+
+2018-04-13 13:35:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '42884'
+
+2018-04-13 13:35:14 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:14 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Healthfirst,42884
+
+2018-04-13 13:35:14 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:15 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:16 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:16 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:17 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '2652'
+
+2018-04-13 13:35:17 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '2652'
+
+2018-04-13 13:35:17 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:17 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: HealthPlex,2652
+
+2018-04-13 13:35:17 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:18 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:19 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:19 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:21 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '6113'
+
+2018-04-13 13:35:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '6113'
+
+2018-04-13 13:35:21 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:21 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Humana Insurance Company,6113
+
+2018-04-13 13:35:21 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:22 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:22 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:23 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:24 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '510'
+
+2018-04-13 13:35:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '510'
+
+2018-04-13 13:35:24 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:24 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: ICircle Services of the Finger Lakes,510
+
+2018-04-13 13:35:24 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:25 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:26 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:26 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:28 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '6677'
+
+2018-04-13 13:35:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '6677'
+
+2018-04-13 13:35:28 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:28 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Independence American Insurance Company,6677
+
+2018-04-13 13:35:28 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:29 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:30 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:30 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:33 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '6325'
+
+2018-04-13 13:35:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '6325'
+
+2018-04-13 13:35:33 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:33 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Independent Health Benefit Corp.,6325
+
+2018-04-13 13:35:33 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:34 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:35 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:35 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:36 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '2518'
+
+2018-04-13 13:35:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '2518'
+
+2018-04-13 13:35:37 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:37 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Integra MLTC Inc.,2518
+
+2018-04-13 13:35:37 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:38 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:38 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:38 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:40 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '719'
+
+2018-04-13 13:35:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '719'
+
+2018-04-13 13:35:40 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:40 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Jefferson-Lewis et. al School Employees HealthCare Plan,719
+
+2018-04-13 13:35:40 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:41 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:42 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:42 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:43 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '354'
+
+2018-04-13 13:35:44 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '354'
+
+2018-04-13 13:35:44 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:44 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Kalos Health,354
+
+2018-04-13 13:35:44 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:45 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:45 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:45 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:47 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '8233'
+
+2018-04-13 13:35:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '8233'
+
+2018-04-13 13:35:47 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:47 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Lincoln Life & Annuity Company of New York,8233
+
+2018-04-13 13:35:47 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:48 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:49 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:49 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:51 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '7997'
+
+2018-04-13 13:35:51 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '7997'
+
+2018-04-13 13:35:51 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:51 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Met Life/ Metropolitian Life Insurance Company,7997
+
+2018-04-13 13:35:51 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:52 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:52 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:52 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:54 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '19623'
+
+2018-04-13 13:35:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '19623'
+
+2018-04-13 13:35:54 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:54 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: MetroPlus,19623
+
+2018-04-13 13:35:54 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:55 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:55 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:56 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:35:58 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '2977'
+
+2018-04-13 13:35:58 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '2977'
+
+2018-04-13 13:35:58 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:35:58 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Molina Healthcare of New York, Inc.,2977
+
+2018-04-13 13:35:58 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:35:59 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:35:59 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:35:59 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:01 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '175'
+
+2018-04-13 13:36:01 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '175'
+
+2018-04-13 13:36:01 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:01 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Montefiore Diamond Care,175
+
+2018-04-13 13:36:01 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:02 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:03 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:03 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:05 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '32115'
+
+2018-04-13 13:36:05 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '32115'
+
+2018-04-13 13:36:05 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:05 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: MVP Health Care,32115
+
+2018-04-13 13:36:05 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:06 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:06 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:07 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:08 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '5543'
+
+2018-04-13 13:36:08 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '5543'
+
+2018-04-13 13:36:08 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:08 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Nationwide Life Insurance Company,5543
+
+2018-04-13 13:36:08 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:09 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:10 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:10 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:12 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '154'
+
+2018-04-13 13:36:12 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '154'
+
+2018-04-13 13:36:12 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:12 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Niagara Advantage LLC dba Elderwood Health Plan,154
+
+2018-04-13 13:36:12 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:13 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:13 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:14 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:15 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '98751'
+
+2018-04-13 13:36:16 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '98751'
+
+2018-04-13 13:36:16 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:16 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Nippon Life Insurance Company of America,98751
+
+2018-04-13 13:36:16 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:17 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:17 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:17 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:19 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '7945'
+
+2018-04-13 13:36:19 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '7945'
+
+2018-04-13 13:36:19 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:19 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: North Shore LIJ / CareConnect,7945
+
+2018-04-13 13:36:19 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:20 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:21 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:21 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:23 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '22609'
+
+2018-04-13 13:36:23 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '22609'
+
+2018-04-13 13:36:23 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:23 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Oscar Insurance Corp.,22609
+
+2018-04-13 13:36:23 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:24 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:25 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:25 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:26 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '57349'
+
+2018-04-13 13:36:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '57349'
+
+2018-04-13 13:36:27 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:27 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Oxford Health Plans (NY), Inc.,57349
+
+2018-04-13 13:36:27 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:28 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:28 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:28 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:30 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '433'
+
+2018-04-13 13:36:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '433'
+
+2018-04-13 13:36:30 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:30 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: PACE CNY,433
+
+2018-04-13 13:36:30 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:31 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:32 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:32 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:33 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '7495'
+
+2018-04-13 13:36:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '7495'
+
+2018-04-13 13:36:33 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:33 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Physicians Mutual Insurance Company,7495
+
+2018-04-13 13:36:33 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:34 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:35 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:35 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:36 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '141'
+
+2018-04-13 13:36:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '141'
+
+2018-04-13 13:36:37 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:37 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Prime Health Choice LLC,141
+
+2018-04-13 13:36:37 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:38 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:38 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:38 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:40 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '6616'
+
+2018-04-13 13:36:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '6616'
+
+2018-04-13 13:36:40 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:40 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Provident Life and Casualty Insurance Company,6616
+
+2018-04-13 13:36:40 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:41 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:41 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:42 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:43 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '10647'
+
+2018-04-13 13:36:43 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '10647'
+
+2018-04-13 13:36:43 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:43 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Renaissance Health Insurance Company of New York,10647
+
+2018-04-13 13:36:43 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:44 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:45 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:45 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:46 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '86'
+
+2018-04-13 13:36:47 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '86'
+
+2018-04-13 13:36:47 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:47 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Senior Network Health,86
+
+2018-04-13 13:36:47 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:48 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:48 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:48 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:50 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '16418'
+
+2018-04-13 13:36:50 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '16418'
+
+2018-04-13 13:36:50 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:50 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Senior Whole Health,16418
+
+2018-04-13 13:36:50 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:51 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:52 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:52 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:53 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '7613'
+
+2018-04-13 13:36:54 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '7613'
+
+2018-04-13 13:36:54 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:54 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: ShelterPoint Life Insurance Company,7613
+
+2018-04-13 13:36:54 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:55 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:55 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:55 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:36:57 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '1388'
+
+2018-04-13 13:36:57 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '1388'
+
+2018-04-13 13:36:57 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:36:57 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Solstice,1388
+
+2018-04-13 13:36:57 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:36:58 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:36:59 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:36:59 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:01 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '10017'
+
+2018-04-13 13:37:01 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '10017'
+
+2018-04-13 13:37:01 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:01 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Standard Insurance Company of New York,10017
+
+2018-04-13 13:37:01 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:02 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:03 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:03 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:04 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '7418'
+
+2018-04-13 13:37:04 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '7418'
+
+2018-04-13 13:37:04 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:04 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Sun Life and Health Insurance Company,7418
+
+2018-04-13 13:37:04 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:06 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:06 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:06 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:08 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '6616'
+
+2018-04-13 13:37:08 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '6616'
+
+2018-04-13 13:37:08 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:08 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: The Paul Revere Life Insurance Company,6616
+
+2018-04-13 13:37:08 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:09 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:10 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:10 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:11 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '99'
+
+2018-04-13 13:37:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '99'
+
+2018-04-13 13:37:11 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:11 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Total Senior Care Inc.,99
+
+2018-04-13 13:37:11 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:12 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:13 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:13 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:15 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '5761'
+
+2018-04-13 13:37:15 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '5761'
+
+2018-04-13 13:37:15 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:15 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: United Concordia Insurance Company of New York: Advantage 2.0,5761
+
+2018-04-13 13:37:15 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:16 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:16 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:16 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:20 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '113161'
+
+2018-04-13 13:37:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '113161'
+
+2018-04-13 13:37:20 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:20 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: UnitedHealthcare of New York Inc.,113161
+
+2018-04-13 13:37:20 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:21 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:21 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:22 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:24 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '18177'
+
+2018-04-13 13:37:24 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '18177'
+
+2018-04-13 13:37:24 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:24 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: Univera Healthcare/Excellus Health Plan, Inc.,18177
+
+2018-04-13 13:37:24 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:26 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:26 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:26 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:28 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '14908'
+
+2018-04-13 13:37:28 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '14908'
+
+2018-04-13 13:37:28 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:28 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: VillageCareMAX,14908
+
+2018-04-13 13:37:28 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:30 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:30 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:30 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:32 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '1457'
+
+2018-04-13 13:37:33 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '1457'
+
+2018-04-13 13:37:33 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:33 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: VNA Homecare Options LLC,1457
+
+2018-04-13 13:37:33 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:34 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:34 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:34 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:36 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '37841'
+
+2018-04-13 13:37:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '37841'
+
+2018-04-13 13:37:37 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:37 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: VNS CHOICE,37841
+
+2018-04-13 13:37:37 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:38 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:38 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:39 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:40 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '19211'
+
+2018-04-13 13:37:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '19211'
+
+2018-04-13 13:37:40 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:41 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: WellCare of New York Inc.,19211
+
+2018-04-13 13:37:41 - [TEST_STEP][PASSED] - Statement - selenium.open("http://dev.providerlookup.ipro.org/providers/search"): null
+
+2018-04-13 13:37:42 - [TEST_STEP][PASSED] - Statement - selenium.click("id=0PracticeProviderPndsid"): null
+
+2018-04-13 13:37:42 - [TEST_STEP][PASSED] - Statement - selenium.select("id=0PracticeProviderPndsid", "label=" + data.internallyGetValue("issuer", index)): null
+
+2018-04-13 13:37:43 - [TEST_STEP][PASSED] - Statement - selenium.click("//button[@type='submit']"): null
+
+2018-04-13 13:37:44 - [TEST_STEP][PASSED] - Statement - result = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_PNDS/recordCount)): Text of object 'Object Repository/Page_PNDS/recordCount' is: '9688'
+
+2018-04-13 13:37:44 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_PNDS/recordCount' is: '9688'
+
+2018-04-13 13:37:44 - [TEST_STEP][PASSED] - Statement - log = new com.kms.katalon.core.logging.KeywordLogger(): null
+
+2018-04-13 13:37:44 - [TEST_STEP][PASSED] - Statement - log.logInfo("Results: " + data.internallyGetValue("issuer", index) + "," + result): Results: YourCare Health Plan Inc.,9688
+
+2018-04-13 13:37:44 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-04-13 13:37:46 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-04-13 13:31:15 - [TEST_SUITE][PASSED] - PNDS Provider Lookup: Test Cases/PL Get Plan Counts]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

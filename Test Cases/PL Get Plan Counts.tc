@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PL Get Plan Counts</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>75a0a500-1fa3-4fce-9521-910133a8c454</testCaseGuid>
+   <variable>
+      <defaultValue>'http://dev.providerlookup.ipro.org'</defaultValue>
+      <description></description>
+      <id>05daa8ab-ec8c-411a-bc9e-779cbd088e3b</id>
+      <masked>false</masked>
+      <name>baseURL</name>
+   </variable>
+   <variable>
+      <defaultValue>'http://dev.providerlookup.ipro.org/providers/search'</defaultValue>
+      <description></description>
+      <id>58a29a62-ebe8-48f0-9c2c-6995965fea9c</id>
+      <masked>false</masked>
+      <name>startURL</name>
+   </variable>
+</TestCaseEntity>

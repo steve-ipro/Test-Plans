@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+PNDS Provider Lookup,Chrome 65.0.3325.181,,2018-04-10 15:43:27,2018-04-10 15:43:42,14.638s,PASSED
+,,,,,,
+Test Cases/Zipcode test,Chrome 65.0.3325.181,,2018-04-10 15:43:28,2018-04-10 15:43:42,13.585s,PASSED
+openBrowser,Chrome 65.0.3325.181,,2018-04-10 15:43:29,2018-04-10 15:43:33,3.435s,PASSED
+Statement - data = com.kms.katalon.core.testdata.TestDataFactory.findTestData(Zipcodes),Chrome 65.0.3325.181,,2018-04-10 15:43:33,2018-04-10 15:43:33,0.037s,PASSED
+Statement - driver = com.kms.katalon.core.webui.driver.DriverFactory.getWebDriver(),Chrome 65.0.3325.181,,2018-04-10 15:43:33,2018-04-10 15:43:33,0.010s,PASSED
+"Statement - baseUrl = ""https://pndslookup.health.ny.gov""",Chrome 65.0.3325.181,,2018-04-10 15:43:33,2018-04-10 15:43:33,0.001s,PASSED
+"Statement - selenium = new com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium(driver, baseUrl)",Chrome 65.0.3325.181,,2018-04-10 15:43:33,2018-04-10 15:43:33,0.161s,PASSED
+Statement - For (def index : (0..(data.getRowNumbers() - 1))),Chrome 65.0.3325.181,,2018-04-10 15:43:33,2018-04-10 15:43:42,9.019s,PASSED
+closeBrowser,Chrome 65.0.3325.181,,2018-04-10 15:43:42,2018-04-10 15:43:42,0.148s,PASSED
